@@ -1,30 +1,332 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>My Webpage</title>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-        <style>
-            .container {
-                align-content: center;
-            }
-            .section {
-                background-color: seagreen;
-                font-size: 20px;
-                padding: 20px;
-                margin: 20px;
-                width: 200px;
-                text-align: center;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-sm-6 section">Section 1</div>
-                <div class="col-lg-3 col-sm-6 section">Section 2</div>
-                <div class="col-lg-3 col-sm-6 section">Section 3</div>
-                <div class="col-lg-3 col-sm-6 section">Section 4</div>
-            </div>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YTU</title>
+    <!-- Vendor -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!-- Favicons -->
+    <link href="img/favicon.png" rel="icon">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <!-- Scripts -->
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="bg-danger" style="height: 5px"></div>
+        <div class="col-md-12 d-flex justify-content-center banner">
+            <a class="my-2" href="index.html"><img class="logo" src="img/banner.png" alt="Yangon Technological University" srcset=""></a>
         </div>
-    </body>
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #F8C146;">
+            <a class="navbar-brand font-weight-bolder text-danger" href="#">ရန္ကုန္နည္းပညာတကၠသိုလ္</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                  <a class="nav-link active" href="index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      About YTU
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="#">Rector's Message</a>
+                      <a class="dropdown-item" href="#">History</a>
+                    </div>
+                  </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Admission
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Undergraduate</a>
+                    <a class="dropdown-item" href="#">Graduate</a>
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Department
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="#">Architecture</a>
+                      <a class="dropdown-item" href="#">Civil Engineering</a>
+                      <a class="dropdown-item" href="#">Mechanical Engineering</a>
+                      <a class="dropdown-item" href="#">Mechatronics Engineering</a>
+                      <a class="dropdown-item" href="#">Computer Engineering</a>
+                      <a class="dropdown-item" href="#">Petroleum Engineering</a>
+                      <a class="dropdown-item" href="#">Metallurgy Engineering</a>
+                      <a class="dropdown-item" href="#">Mining Engineering</a>
+                      <a class="dropdown-item" href="#">Textile Engineering</a>
+                      <a class="dropdown-item" href="#">Electronics Engineering</a>
+                      <a class="dropdown-item" href="#">Electrical Power Engineering</a>
+                    </div>
+                  </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">News and Events</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Research</a>
+                  </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
+              </form>
+            </div>
+          </nav>
+    </header>
+    <section class="site-content container-fluid p-0">
+        <div class="container-fluid ytu-bg m-0 pb-5"></div>
+        <div class="container mt-3 mb-3 p-5" style="background-color:rgba(0,0,0,0.6)">
+            <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="4"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <div style="height:300px;width:400px;"> <img width="400px" src="http://ytu.edu.mm/wp-content/uploads/2020/06/study.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="http://ytu.edu.mm/wp-content/uploads/2020/06/study.jpg 843w, http://ytu.edu.mm/wp-content/uploads/2020/06/study-300x242.jpg 300w, http://ytu.edu.mm/wp-content/uploads/2020/06/study-768x620.jpg 768w" sizes="(max-width: 843px) 100vw, 843px" /></div>
+                        </div>
+
+                        <div class="col-md-7 text-white">
+                            <h3> Study With Austrialia</h3>   
+                            <p>ဩစေတးလ်အဆင့္ျမင့္ပညာေရးသင္တန္းမ်ားကို အြန္လိုင္းမွ အခမဲ့ေလ့လာနိုင္သည့္ အခြင့္အလမ္းကို ျမႇင့္တင္ရန္အတြက္ ဩစေၾတးလ်ကဳန္သြယ္ေရးႏွင့္ရင္းႏွီးျမႇုပ္ႏွံမႈေကာ္မရွင္ (Austrade)က "Study with Australia " အမည္ျဖင့္ ကမ္ပိန္းတစ္ခု ေဆာင္႐ြက္ထားပါသည္။ စီးပြားေရး၊ ဒစ္ဂ်စ္တယ္နည္းပညာ၊ STEM ပညာေရး၊ က်န္းမာေရ၊ သင္ျပနည္း စသည့္ ပညာရပ္ဆိုင္ရာ သင္တန္းမ်ားအား ဩစေၾတးလ် တကၠသိုလ္မ်ားက အြန္လိုင္းမွ သင္ၾကားပို႔ခ်ေပးမည့္ အစီအစဥ္ ျဖစ္ၿပီး ၃၀-၆-၂၀၂၀ ရက္ေန႕ ေနာက္ဆုံးထား စာရင္းသြင္းျခင္းျဖင့္ သက္ဆိုင္ရာ တကၠသိုလ္မ်ားက ေပးအပ္သည့္ Ditigal Certificate အား အခမဲ့ ရရွိမည္ ျဖစ္ပါသည္။&hellip;</p>         
+                                                        <br><br>
+                            <div class="text-center">
+                                <a href="http://ytu.edu.mm/?post_type=post&p=3858" class="btn btn-sm btn-warning text-white">Read More <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <div style="height:300px;width:400px;"> <img width="400px" src="http://ytu.edu.mm/wp-content/uploads/2019/12/ATH_3252-1024x683.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="http://ytu.edu.mm/wp-content/uploads/2019/12/ATH_3252-1024x683.jpg 1024w, http://ytu.edu.mm/wp-content/uploads/2019/12/ATH_3252-1024x683-300x200.jpg 300w, http://ytu.edu.mm/wp-content/uploads/2019/12/ATH_3252-1024x683-768x512.jpg 768w" sizes="(max-width: 1024px) 100vw, 1024px" /></div>
+                        </div>
+
+                        <div class="col-md-7 text-white">
+                            <h3> Ministry of Education Yangon Technological University The Seventh International Conference on Science and Engineering 2016 Opening Ceremony</h3>   
+                            <p>Ministry of Education Yangon Technological University The Seventh International Conference on Science and Engineering 2016 Opening Ceremony</p>         
+                                                        <br><br>
+                            <div class="text-center">
+                                <a href="http://ytu.edu.mm/?post_type=post&p=3186" class="btn btn-sm btn-warning text-white">Read More <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <div style="height:300px;width:400px;"> <img width="400px" src="http://ytu.edu.mm/wp-content/uploads/2019/08/wwspzp.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="http://ytu.edu.mm/wp-content/uploads/2019/08/wwspzp.jpg 720w, http://ytu.edu.mm/wp-content/uploads/2019/08/wwspzp-150x150.jpg 150w, http://ytu.edu.mm/wp-content/uploads/2019/08/wwspzp-300x300.jpg 300w" sizes="(max-width: 720px) 100vw, 720px" /></div>
+                        </div>
+
+                        <div class="col-md-7 text-white">
+                            <h3> 7th WWSPZP</h3>   
+                            <p>World Wide Sayar Pu Zaw Pwe was held in 2016 and many alumni students of RIT attended and paid respects to their beloved teachers.</p>         
+                                                        <br><br>
+                            <div class="text-center">
+                                <a href="http://ytu.edu.mm/?post_type=post&p=383" class="btn btn-sm btn-warning text-white">Read More <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <div style="height:300px;width:400px;"> <img width="400px" src="http://ytu.edu.mm/wp-content/uploads/2019/08/leaf.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="http://ytu.edu.mm/wp-content/uploads/2019/08/leaf.jpg 1125w, http://ytu.edu.mm/wp-content/uploads/2019/08/leaf-150x150.jpg 150w, http://ytu.edu.mm/wp-content/uploads/2019/08/leaf-300x300.jpg 300w, http://ytu.edu.mm/wp-content/uploads/2019/08/leaf-768x768.jpg 768w, http://ytu.edu.mm/wp-content/uploads/2019/08/leaf-1024x1024.jpg 1024w" sizes="(max-width: 1125px) 100vw, 1125px" /></div>
+                        </div>
+
+                        <div class="col-md-7 text-white">
+                            <h3> Swal Daw Leaf</h3>   
+                            <p>Swal Daw Leaf (Bauhinia variegata's leaf) is a representation of YTU and has a meaningful fact behind it.</p>         
+                                                        <br><br>
+                            <div class="text-center">
+                                <a href="http://ytu.edu.mm/?post_type=post&p=118" class="btn btn-sm btn-warning text-white">Read More <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <div style="height:300px;width:400px;"> <img width="400px" src="http://ytu.edu.mm/wp-content/uploads/2019/08/DGxCZu57bM3uajhu02EO.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="http://ytu.edu.mm/wp-content/uploads/2019/08/DGxCZu57bM3uajhu02EO.jpg 1000w, http://ytu.edu.mm/wp-content/uploads/2019/08/DGxCZu57bM3uajhu02EO-300x170.jpg 300w, http://ytu.edu.mm/wp-content/uploads/2019/08/DGxCZu57bM3uajhu02EO-768x435.jpg 768w" sizes="(max-width: 1000px) 100vw, 1000px" /></div>
+                        </div>
+
+                        <div class="col-md-7 text-white">
+                            <h3> Myanmar’s first Diploma Programme in Telecommunications launched</h3>   
+                            <p>The new Diploma Programme in Telecommunications between the University of Oulu and Yangon Technical University (YTU) was launched on 22 March 2018. The programme aims to promote the construction of a society of equal opportunities in Myanmar as well as entrepreneurship and&hellip;</p>         
+                                                        <br><br>
+                            <div class="text-center">
+                                <a href="http://ytu.edu.mm/?post_type=post&p=55" class="btn btn-sm btn-warning text-white">Read More <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>         
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </section>
+    <div class="box">
+        <div class="container mt-4">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 pl-4 pr-4">
+                        <div class="box-part text-center">
+                            <i class="fa fa-user circle-icon bg-warning mb-3" style='font-size: 30px' aria-hidden="true"></i>
+                            <h2 class="title">Our Objectives</h2>
+                            <p class="text">It is envisaged that YTU will become a highly-prestigious technological centre of excellence in teaching and research with a strong commitment to systematically educate and train</p>
+                            <div class="text-right">
+                                <a href="http://ytu.edu.mm/rectors-messages/" class="btn btn-sm btn-warning text-white">Read More <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>  
+                                   
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 pl-4 pr-4">
+                        <div class="box-part text-center">
+                            <i class="fas fa-user-check circle-icon bg-warning mb-3" style='font-size: 30px' aria-hidden="true"></i>
+                            <h2 class="title">Our Missions</h2>
+                            <p class="text">To educate and train students systematically to become engineers, specialists and researchers who can effectively contribute to the building of a modern developed nation</p>
+                            <div class="text-right">
+                                <a href="http://ytu.edu.mm/rectors-messages/" class="btn btn-sm btn-warning text-white">Read More <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                           
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 pl-4 pr-4">
+                        <div class="box-part text-center">
+                            <i class="fas fa-desktop circle-icon bg-warning mb-3" style='font-size: 28px' aria-hidden="true"></i>
+                            <h2 class="title">Programs</h2>
+                            <p class="text">When an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into...</p>
+                            <div class="text-right">
+                                <a href="http://ytu.edu.mm/programs/" rel="bookmark" class="btn btn-sm btn-warning text-white">Read More <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                <div class="row my-5">
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                        <img class="rector" width="340px" src="http://ytu.edu.mm/wp-content/uploads/2019/11/YTU_Rector.jpg" alt="" srcset="">
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                    <header>
+                        <h1 class="title text-warning">Rector’s Messages</h1>                
+                    </header><!-- .entry-header -->
+                    <p> Yangon Technological University is one of the best universities in Myanmar and only allows admissions of students who gained high marks from the matriculation examination. A student's majorized engineering field is also decided by the marks he earned through the matriculation examination. Currently, YTU possesses 12 Engineering Departments, 6 Supporting Departments, 1 Research Centre and 47 Laboratories. There are currently about 2000 students seeking knowledge and experiences at YTU. VISION It is&hellip;</p>
+                    <a href="http://ytu.edu.mm/?post_type=page&p=1746" class="btn btn-sm theme-bg-color text-white float-right">Read More <i class="fas fa-arrow-circle-right "></i></a>
+                    </div>
+                   
+                    </div>
+            <div class="text-center">
+                <h1 class="theme-text-color">YTU Events</h1>
+            </div>
+            <div class="row my-3">
+                                    <div class="col-md-3">
+                                <a href="http://ytu.edu.mm/?post_type=post&p=114">
+                                    <figure class="imghvr-flip-diag-2">
+                                    <img src="http://ytu.edu.mm/wp-content/uploads/2019/08/patricia-beatrix-villanueva-VV9VyibHYXI-unsplash.png" alt="" class="w-100" style="height:200px;">
+                                        <figcaption>
+                                            <h5 class="ih-fade-down ih-delay-sm ">Golden Jubilee</h5>
+                                            <p class="ih-zoom-in ih-delay-md">
+                                            <i>YTU has celebrated the golden jubilee on 2015. It has&hellip;</i>
+                                            </p>
+                                            <p class="ih-zoom-in ih-delay-md">
+                                            <i>March 10, 2020</i>
+                                            </p>
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                            </div>
+                                                <div class="col-md-3">
+                                <a href="http://ytu.edu.mm/?post_type=post&p=3186">
+                                    <figure class="imghvr-flip-diag-2">
+                                    <img src="http://ytu.edu.mm/wp-content/uploads/2019/12/ATH_3252-1024x683.jpg" alt="" class="w-100" style="height:200px;">
+                                        <figcaption>
+                                            <h5 class="ih-fade-down ih-delay-sm ">Ministry of Education Yangon Technological University The Seventh International Conference on Science and Engineering 2016 Opening Ceremony</h5>
+                                            <p class="ih-zoom-in ih-delay-md">
+                                            <i>Ministry of Education Yangon Technological University The Seventh International Conference&hellip;</i>
+                                            </p>
+                                            <p class="ih-zoom-in ih-delay-md">
+                                            <i>February 27, 2020</i>
+                                            </p>
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                            </div>
+                                                <div class="col-md-3">
+                                <a href="http://ytu.edu.mm/?post_type=post&p=55">
+                                    <figure class="imghvr-flip-diag-2">
+                                    <img src="http://ytu.edu.mm/wp-content/uploads/2019/08/DGxCZu57bM3uajhu02EO.jpg" alt="" class="w-100" style="height:200px;">
+                                        <figcaption>
+                                            <h5 class="ih-fade-down ih-delay-sm ">Myanmar’s first Diploma Programme in Telecommunications launched</h5>
+                                            <p class="ih-zoom-in ih-delay-md">
+                                            <i>The new Diploma Programme in Telecommunications between the University of&hellip;</i>
+                                            </p>
+                                            <p class="ih-zoom-in ih-delay-md">
+                                            <i>January 8, 2020</i>
+                                            </p>
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                            </div>
+                                                <div class="col-md-3">
+                                <a href="http://ytu.edu.mm/?post_type=post&p=1377">
+                                    <figure class="imghvr-flip-diag-2">
+                                    <img src="http://ytu.edu.mm/wp-content/uploads/2019/08/XDGWzCUdnsMd9rI63dZZ.jpg" alt="" class="w-100" style="height:200px;">
+                                        <figcaption>
+                                            <h5 class="ih-fade-down ih-delay-sm ">Training of IoT and Environmental Engineering Courses</h5>
+                                            <p class="ih-zoom-in ih-delay-md">
+                                            <i>Training of IoT and Environmental Engineering Courses</i>
+                                            </p>
+                                            <p class="ih-zoom-in ih-delay-md">
+                                            <i>October 16, 2019</i>
+                                            </p>
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                            </div>
+                                </div>
+            <div class="text-right">
+                <a href="http://ytu.edu.mm/events-2/" class="btn btn-sm theme-bg-color text-white">More <i class="fas fa-arrow-circle-right "></i></a>
+            </div>
+            <div class="row  my-5">
+                       
+                    <div class="col-md-12 text-center">
+                        <header class="entry-header">
+                            <h1 class="entry-title theme-text-color">WELCOME TO YTU</h1>                    
+                        </header><!-- .entry-header -->
+                        
+        <p> Yangon Technological University is one of the best universities in Myanmar and only allows admissions of students who gained high marks from the matriculation examination. A student&#8217;s majorized engineering field is also decided by the marks he earned through the matriculation examination. Currently, YTU possesses 12 Engineering Departments, 6 Supporting Departments, 1 Research Centre and 47 Laboratories. There are currently about 2000 students seeking knowledge and experiences at YTU. Find out more about the history of YTU at &#8230; </p>
+        
+        
+        
+                        <a href="http://ytu.edu.mm/?post_type=page&p=1768" class="btn btn-sm theme-bg-color text-white ">Read More <i class="fas fa-arrow-circle-right "></i></a>
+                    </div>
+                    </div>
+                   
+                    </div>
+            
+            </div>
+    </div> 
+</body>
 </html>
+
