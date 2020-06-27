@@ -177,3 +177,16 @@ footer {
   background-color: #373B44;
   align-content: center;
 }
+
+.img-gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.img-gallery img {
+  vertical-align: middle;
+}
+
+p.history {
+  text-align: justify;
+}
