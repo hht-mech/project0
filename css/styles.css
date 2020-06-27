@@ -138,3 +138,18 @@ section:nth-of-type(2n) {
   border: 1px solid black;
   border-radius: 5%;
 }
+
+.school-content {
+  width: 100%;
+  display: table;
+  margin: 0;
+  background-color: #373B44;
+}
+
+footer {
+  width: 100%;
+  display: table;
+  margin: 0;
+  background-color: #373B44;
+  align-content: center;
+}
