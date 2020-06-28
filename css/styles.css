@@ -77,6 +77,10 @@ section > .hii {
   width: 80%;
 }
 
+h1.ug {
+  letter-spacing: 10px;
+}
+
 @media (min-width: 300px) and (max-width: 500px) {
   section {
     width: 100%;
@@ -95,6 +99,15 @@ section > .hii {
 
   section > .hii {
     width: 300px;
+  }
+
+  h1.ug {
+    letter-spacing: 3.5px;
+  }
+
+  table {
+    width: fit-content;
+    margin: 0;
   }
 }
 
