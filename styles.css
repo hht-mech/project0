@@ -1,11 +1,12 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
 body {
-  background-color: #fff;
-  font-family: "Roboto", sans-serif;
+    background-color: #fff;
+    font-family: 'Roboto', sans-serif
 }
 
 .banner {
-  background-color: #f8c04669;
+  background-color: #f8c04669 ;
 }
 
 .logo {
@@ -17,33 +18,42 @@ body {
     display: none;
   }
 }
+
 @media (max-width: 700px) {
   .logo {
     max-height: 60px;
   }
 }
+
 @media (max-width: 500px) {
   .logo {
     max-height: 45px;
   }
 }
+
+.font-weight-bolder {
+  font-size: 21px;
+}
+
 @media (max-width: 800px) {
   .font-weight-bolder {
     text-align: center;
     font-size: 30px;
   }
 }
+
 @media (max-width: 400px) {
   .font-weight-bolder {
     text-align: center;
     font-size: 20px;
   }
 }
-.navbar-nav .nav-item .nav-link {
-  color: #7e7979;
+
+.navbar-nav > .nav-item > .nav-link {
+  color: rgb(126, 121, 121);
 }
 
-.navbar-nav .nav-item .nav-link:hover {
+.navbar-nav > .nav-item > .nav-link:hover {
   color: black;
 }
 
@@ -53,12 +63,17 @@ section {
   margin: 0;
   max-width: none;
   background-color: #373B44;
-  background-image: url("http://ytu.edu.mm/wp-content/themes/StrapPress-master/images/bgslide.jpg");
+
+  background-image:url("http://ytu.edu.mm/wp-content/themes/StrapPress-master/images/bgslide.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-section .hii {
+section:nth-of-type(2n) {
+  background-color: #FE4B74;
+}
+
+section > .hii {
   width: 80%;
 }
 
@@ -67,7 +82,22 @@ h1.ug {
 }
 
 @media (min-width: 300px) and (max-width: 500px) {
-  section .hii {
+  section {
+    width: 100%;
+    display: inline-block;
+    margin: 0;
+    background-color: #373B44;
+  
+    background-image:url("http://ytu.edu.mm/wp-content/themes/StrapPress-master/images/bgslide.jpg");
+    background-repeat: inherit;
+    background-size: cover;
+  }
+  
+  section:nth-of-type(2n) {
+    background-color: #FE4B74;
+  }
+
+  section > .hii {
     width: 300px;
   }
 
@@ -80,22 +110,21 @@ h1.ug {
     margin: 0;
   }
 }
-.box {
-  padding: 10px 0px;
-}
 
-.rector, .box-part {
-  margin: 5px 0px 25px 15px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+.box {
+    padding: 10px 0px
 }
 
 .box-part {
   background: #F0FFFF;
   padding: 20px 10px;
+  margin: 5px 0px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px
 }
 
 .box-part:hover {
-  background: #696767c7;
+    background: #696767c7
 }
 
 .box-part:hover .fa,
@@ -106,23 +135,22 @@ h1.ug {
   -webkit-transition: all 1s ease-out;
   -moz-transition: all 1s ease-out;
   -o-transition: all 1s ease-out;
-  transition: all 1s ease-out;
+  transition: all 1s ease-out
 }
 
 .r-title {
   margin: 5px 20px;
 }
 
-.r-text, .text {
+.text {
   margin: 10px 20px 30px 20px;
   font-size: 17px;
-}
-
-.text {
   text-align: center;
 }
 
 .r-text {
+  margin: 10px 20px 30px 20px;
+  font-size: 17px;
   text-align: justify;
 }
 
@@ -131,21 +159,24 @@ h1.ug {
 }
 
 .circle-icon {
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-  line-height: 70px;
-  vertical-align: middle;
-  align-content: center;
-  padding: 20px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    line-height: 70px;
+    vertical-align: middle;
+    align-content: center;
+    padding: 20px;
 }
 
 .rector {
+  margin: 5px 0px 5px 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
   border: 1px solid black;
   border-radius: 5%;
 }
 
-footer, .school-content {
+.school-content {
   width: 100%;
   display: table;
   margin: 0;
@@ -153,6 +184,10 @@ footer, .school-content {
 }
 
 footer {
+  width: 100%;
+  display: table;
+  margin: 0;
+  background-color: #373B44;
   align-content: center;
 }
 
@@ -168,5 +203,3 @@ footer {
 p.para {
   text-align: justify;
 }
-
-/*# sourceMappingURL=styles.css.map */

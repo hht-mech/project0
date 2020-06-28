@@ -1,11 +1,14 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
 body {
   background-color: #fff;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif
 }
 
+$banner: #f8c04669;
+
 .banner {
-  background-color: #f8c04669;
+  background-color: $banner;
 }
 
 .logo {
@@ -17,59 +20,85 @@ body {
     display: none;
   }
 }
+
 @media (max-width: 700px) {
   .logo {
     max-height: 60px;
   }
 }
+
 @media (max-width: 500px) {
   .logo {
     max-height: 45px;
   }
 }
+
 @media (max-width: 800px) {
   .font-weight-bolder {
     text-align: center;
     font-size: 30px;
   }
 }
+
 @media (max-width: 400px) {
   .font-weight-bolder {
     text-align: center;
     font-size: 20px;
   }
 }
-.navbar-nav .nav-item .nav-link {
-  color: #7e7979;
+
+.navbar-nav {
+  .nav-item {
+    .nav-link {
+      color: rgb(126, 121, 121);
+    }
+  }
 }
 
-.navbar-nav .nav-item .nav-link:hover {
-  color: black;
+.navbar-nav {
+  .nav-item {
+    .nav-link:hover {
+      color: black;
+    }
+  }
 }
 
-section {
+%section {
   width: 100%;
   display: inline-block;
   margin: 0;
   max-width: none;
   background-color: #373B44;
-  background-image: url("http://ytu.edu.mm/wp-content/themes/StrapPress-master/images/bgslide.jpg");
+
+  background-image:url("http://ytu.edu.mm/wp-content/themes/StrapPress-master/images/bgslide.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-section .hii {
-  width: 80%;
+section {
+  @extend %section;
 }
+
+section {
+  .hii {
+    width: 80%;
+  }
+} 
 
 h1.ug {
   letter-spacing: 10px;
 }
 
 @media (min-width: 300px) and (max-width: 500px) {
-  section .hii {
-    width: 300px;
+  section {
+    @extend %section;
   }
+
+  section {
+    .hii {
+      width: 300px;
+    }
+  } 
 
   h1.ug {
     letter-spacing: 3.5px;
@@ -80,11 +109,12 @@ h1.ug {
     margin: 0;
   }
 }
+
 .box {
-  padding: 10px 0px;
+  padding: 10px 0px
 }
 
-.rector, .box-part {
+%shadow {
   margin: 5px 0px 25px 15px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -92,37 +122,44 @@ h1.ug {
 .box-part {
   background: #F0FFFF;
   padding: 20px 10px;
+  @extend %shadow;
 }
 
+$grayish: #696767c7;
+
 .box-part:hover {
-  background: #696767c7;
+  background: $grayish;
 }
+
+$ease: all 1s ease-out;
 
 .box-part:hover .fa,
 .box-part:hover .title,
 .box-part:hover .text,
 .box-part:hover a {
   color: #FFF;
-  -webkit-transition: all 1s ease-out;
-  -moz-transition: all 1s ease-out;
-  -o-transition: all 1s ease-out;
-  transition: all 1s ease-out;
+  -webkit-transition: $ease;
+  -moz-transition: $ease;
+  -o-transition: $ease;
+  transition: $ease;
 }
 
 .r-title {
   margin: 5px 20px;
 }
 
-.r-text, .text {
+%text {
   margin: 10px 20px 30px 20px;
   font-size: 17px;
 }
 
 .text {
+  @extend %text;
   text-align: center;
 }
 
 .r-text {
+  @extend %text;
   text-align: justify;
 }
 
@@ -141,18 +178,26 @@ h1.ug {
 }
 
 .rector {
+  @extend %shadow;
   border: 1px solid black;
   border-radius: 5%;
 }
 
-footer, .school-content {
+$footer: #373B44;
+
+%footer {
   width: 100%;
   display: table;
   margin: 0;
-  background-color: #373B44;
+  background-color: $footer;
+}
+
+.school-content {
+    @extend %footer;
 }
 
 footer {
+  @extend %footer;
   align-content: center;
 }
 
@@ -168,5 +213,3 @@ footer {
 p.para {
   text-align: justify;
 }
-
-/*# sourceMappingURL=styles.css.map */
